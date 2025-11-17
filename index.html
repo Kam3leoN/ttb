@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTTF >>> Time Circuits to time travel</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="dist/css/main.css">
+
+</head>
+<body>
+
+    <div class="overall-container">
+
+
+      <div class="error" id="error"></div>
+
+      <!-- <h2>BACK TO THE FUTURE</h2> -->
+
+          <!-- START : PANEL DESTINATION TIME -->
+          <div class="individual-time-circuit-wrapper-area destination">
+
+            <div class="individual-time-circuit-content">
+
+              <!-- START : RED LABELS -->
+              <div class="row-of-labels">
+                <div class="sticker-label month dest_label_month">MONTH</div>
+                <div class="sticker-label day dest_label_day">DAY</div>
+                <div class="sticker-label year dest_label_year">YEAR</div>
+                <div class="sticker-label hour dest_label_hour">HOUR</div>
+                <div class="sticker-label min dest_label_min">MIN</div>
+              </div>
+              <!-- //END : RED LABELS -->
+              <!-- START : CONSOLES LEDS DISPLAY -->
+              <div class="row-of-numbers-display-area">
+
+                <div class="console-display lcd console-month" id="destination-month">
+                  <span class="month-text month-text-main">NOV</span>
+                  <span class="month-text month-text-shadow"></span>
+                </div>
+                <div class="console-display lcd console-day" id="destination-day">
+                  <span class="day-text day-text-main">12</span>
+                  <span class="day-text day-text-shadow">88</span>
+                </div>
+                <div class="console-display lcd console-year" id="destination-year">
+                  <span class="year-text year-text-main">1955</span>
+                  <span class="year-text year-text-shadow">8888</span>
+                </div>
+
+                <div class="console-display console-am-pm">
+                  <div class="am-label dest_label_am"></div>
+                  <div class="light am light-on" id="am-destination"></div>
+                  <div class="pm-label dest_label_pm"></div>
+                  <div class="light pm light-off" id="pm-destination"></div>
+                </div>
+
+                <div class="console-display lcd console-hour" id="destination-hour">
+                  <span class="hour-text hour-text-main">06</span>
+                  <span class="hour-text hour-text-shadow">88</span>
+                </div>
+
+                <div class="console-display colon">
+                  <div class="colon top"></div>
+                  <div class="colon bottom"></div>
+                </div>
+
+                <div class="console-display lcd console-minute" id="destination-minute">
+                  <span class="minute-text minute-text-main">39</span>
+                  <span class="minute-text minute-text-shadow">88</span>
+                </div>
+
+              </div>
+              <!-- //END : CONSOLES LEDS DISPLAY -->
+
+              <div class="footer-label">DESTINATION TIME</div>
+
+            </div>
+
+          </div>
+          <!-- //END : PANEL DESTINATION TIME -->
+
+          <!-- START : PANEL PRESENT TIME -->
+          <div class="individual-time-circuit-wrapper-area present">
+
+            <div class="individual-time-circuit-content">
+
+              <!-- START : RED LABELS -->
+              <div class="row-of-labels">
+                <div class="sticker-label month present_label_month">MONTH</div>
+                <div class="sticker-label day present_label_day">DAY</div>
+                <div class="sticker-label year present_label_year">YEAR</div>
+                <div class="sticker-label hour present_label_hour">HOUR</div>
+                <div class="sticker-label min present_label_min">MIN</div>
+              </div>
+              <!-- //END : RED LABELS -->
+              <!-- START : CONSOLES LEDS DISPLAY -->
+              <div class="row-of-numbers-display-area">
+
+                <div class="console-display lcd console-month" id="present-month">
+                  <span class="month-text month-text-main">OCT</span>
+                  <span class="month-text month-text-shadow"></span>
+                </div>
+                <div class="console-display lcd console-day" id="present-day">
+                  <span class="day-text day-text-main">26</span>
+                  <span class="day-text day-text-shadow">88</span>
+                </div>
+                <div class="console-display lcd console-year" id="present-year">
+                  <span class="year-text year-text-main">1985</span>
+                  <span class="year-text year-text-shadow">8888</span>
+                </div>
+
+                <div class="console-display console-am-pm">
+                  <div class="am-label present_label_am"></div>
+                  <div class="light am light-off" id="am-present"></div>
+                  <div class="pm-label present_label_pm"></div>
+                  <div class="light pm light-off" id="pm-present"></div>
+                </div>
+
+                <div class="console-display lcd console-hour" id="present-hour">
+                  <span class="hour-text hour-text-main">01</span>
+                  <span class="hour-text hour-text-shadow">88</span>
+                </div>
+
+                <div class="console-display colon">
+                  <div class="colon top"></div>
+                  <div class="colon bottom"></div>
+                </div>
+
+                <div class="console-display lcd console-minute" id="present-minute">
+                  <span class="minute-text minute-text-main">20</span>
+                  <span class="minute-text minute-text-shadow">88</span>
+                </div>
+
+              </div>
+              <!-- //END : CONSOLES LEDS DISPLAY -->
+
+              <div class="footer-label">PRESENT TIME</div>
+
+            </div>
+
+          </div>
+          <!-- //END : PANEL PRESENT TIME -->
+
+          <!-- START : PANEL DEPARTED TIME -->
+          <div class="individual-time-circuit-wrapper-area departed">
+
+            <div class="individual-time-circuit-content">
+
+              <!-- START : RED LABELS -->
+              <div class="row-of-labels">
+                <div class="sticker-label month last_label_month">MONTH</div>
+                <div class="sticker-label day last_label_day">DAY</div>
+                <div class="sticker-label year last_label_year">YEAR</div>
+                <div class="sticker-label hour last_label_hour">HOUR</div>
+                <div class="sticker-label min last_label_min">MIN</div>
+              </div>
+              <!-- //END : RED LABELS -->
+              <!-- START : CONSOLES LEDS DISPLAY -->
+              <div class="row-of-numbers-display-area">
+
+                <div class="console-display lcd console-month" id="departed-month">
+                  <span class="month-text month-text-main">OCT</span>
+                  <span class="month-text month-text-shadow"></span>
+                </div>
+                <div class="console-display lcd console-day" id="departed-day">
+                  <span class="day-text day-text-main">26</span>
+                  <span class="day-text day-text-shadow">88</span>
+                </div>
+                <div class="console-display lcd console-year" id="departed-year">
+                  <span class="year-text year-text-main">1985</span>
+                  <span class="year-text year-text-shadow">8888</span>
+                </div>
+
+                <div class="console-display console-am-pm">
+                  <div class="am-label last_label_am"></div>
+                  <div class="light am light-on" id="am-departed"></div>
+                  <div class="pm-label last_label_pm"></div>
+                  <div class="light pm light-off" id="pm-departed"></div>
+                </div>
+
+                <div class="console-display lcd console-hour" id="departed-hour">
+                  <span class="hour-text hour-text-main">01</span>
+                  <span class="hour-text hour-text-shadow">88</span>
+                </div>
+
+                <div class="console-display colon">
+                  <div class="colon top"></div>
+                  <div class="colon bottom"></div>
+                </div>
+
+                <div class="console-display lcd console-minute" id="departed-minute">
+                  <span class="minute-text minute-text-main">21</span>
+                  <span class="minute-text minute-text-shadow">88</span>
+                </div>
+
+              </div>
+              <!-- //END : CONSOLES LEDS DISPLAY -->
+
+              <div class="footer-label">LAST TIME DEPARTED</div>
+
+            </div>
+
+          </div>
+          <!-- //END : PANEL DEPARTED TIME -->
+
+          <!-- START : BOUTONS DE CONTRÔLE -->
+          <button class="date" type="button" aria-label="Date">
+            <img src="assets/icons/dialpad.svg" alt="Date" class="date-icon" />
+          </button>
+          <button class="start" type="button" aria-label="Start">
+            <img src="assets/icons/power-off.svg" alt="Start" id="start-icon" class="start-icon" />
+          </button>
+          <button class="reset" type="button" aria-label="Reset">
+            <img src="assets/icons/reset.svg" alt="Reset" class="reset-icon" />
+          </button>
+          <button class="mute" id="mute-btn" type="button" aria-label="Mute">
+            <img src="assets/icons/volume-mute.svg" alt="Mute" id="mute-icon" class="mute-icon" />
+          </button>
+          <button class="theme" id="theme-btn" type="button" aria-label="Theme">
+            <img src="assets/icons/moon.svg" alt="Theme" id="theme-icon" class="theme-icon" />
+          </button>
+          <!-- //END : BOUTONS DE CONTRÔLE -->
+
+          <audio id="soundtrack" src="audios/sounds/bttf.mp3" loop></audio>
+
+    </div>
+
+    <!-- TRAVEL OVERLAY -->
+    <div class="travel-overlay" id="travel-overlay">
+      <svg class="travel-overlay-svg" id="travel-overlay-svg">
+        <defs>
+          <filter id="turbulent-displace" colorInterpolationFilters="sRGB" x="-20%" y="-20%" width="140%" height="140%">
+            <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="1" />
+            <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+              <animate attributeName="dy" values="700; 0" dur="6s" repeatCount="indefinite" calcMode="linear" />
+            </feOffset>
+            <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="1" />
+            <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+              <animate attributeName="dy" values="0; -700" dur="6s" repeatCount="indefinite" calcMode="linear" />
+            </feOffset>
+            <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="2" />
+            <feOffset in="noise1" dx="0" dy="0" result="offsetNoise3">
+              <animate attributeName="dx" values="490; 0" dur="6s" repeatCount="indefinite" calcMode="linear" />
+            </feOffset>
+            <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="2" />
+            <feOffset in="noise2" dx="0" dy="0" result="offsetNoise4">
+              <animate attributeName="dx" values="0; -490" dur="6s" repeatCount="indefinite" calcMode="linear" />
+            </feOffset>
+            <feComposite in="offsetNoise1" in2="offsetNoise2" result="part1" />
+            <feComposite in="offsetNoise3" in2="offsetNoise4" result="part2" />
+            <feBlend in="part1" in2="part2" mode="color-dodge" result="combinedNoise" />
+            <feDisplacementMap in="SourceGraphic" in2="combinedNoise" scale="30" xChannelSelector="R" yChannelSelector="B" />
+          </filter>
+        </defs>
+      </svg>
+      <div class="travel-overlay-container">
+        <div class="travel-overlay-inner">
+          <div class="travel-overlay-border-outer">
+            <div class="travel-overlay-main-card"></div>
+          </div>
+          <div class="travel-overlay-glow-layer-1"></div>
+          <div class="travel-overlay-glow-layer-2"></div>
+        </div>
+        <div class="travel-overlay-overlay-1"></div>
+        <div class="travel-overlay-overlay-2"></div>
+        <div class="travel-overlay-background-glow"></div>
+      </div>
+    </div>
+
+    <!-- MODAL KEYPAD -->
+    <div class="keypad-modal" id="keypad-modal">
+      <div class="keypad-container">
+        <div class="keypad-content">
+          <div class="keypad-display">
+            <div class="keypad-display-text" id="keypad-display-date">MM/DD/YYYY</div>
+            <div class="keypad-display-text" id="keypad-display-time">HH:MM</div>
+          </div>
+          <div class="keypad-grid">
+            <button class="mode-btn mode-destination" type="button" data-mode="destination"></button>
+            <button class="keypad-key" data-key="1">1</button>
+            <button class="keypad-key" data-key="2">2</button>
+            <button class="keypad-key" data-key="3">3</button>
+            <button class="mode-btn mode-present" type="button" data-mode="present"></button>
+            <button class="keypad-key" data-key="4">4</button>
+            <button class="keypad-key" data-key="5">5</button>
+            <button class="keypad-key" data-key="6">6</button>
+            <button class="mode-btn mode-departed" type="button" data-mode="departed"></button>
+            <button class="keypad-key" data-key="7">7</button>
+            <button class="keypad-key" data-key="8">8</button>
+            <button class="keypad-key" data-key="9">9</button>
+            <div></div>
+            <button class="keypad-key keypad-clear" data-key="clear">CLEAR</button>
+            <button class="keypad-key" data-key="0">0</button>
+            <button class="keypad-key keypad-enter" data-key="enter">ENTER</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL SPEEDOMETER -->
+    <div class="speedometer-modal" id="speedometer-modal">
+      <div class="speedometer-modal-container">
+        <div class="speedometer-modal-content">
+          <div class="speedometer-modal-display">
+            <div class="console-display lcd speedometer" id="speedometer-modal-value">
+              <span class="speedometer-text speedometer-text-main">00</span>
+              <span class="speedometer-text speedometer-text-shadow">88</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="dist/js/index.js"></script>
+  </body>
+</html>
